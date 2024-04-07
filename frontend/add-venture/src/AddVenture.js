@@ -4,10 +4,10 @@ import './AddVenture.css'; // Import the external CSS file
 function AddVenture({ name, description, imageUrl }) {
 
     return (
-        <div className="lego-set-container">
+        <div className="challenge-box-container">
             <h2 style={{color:'black'}}>{name}</h2>
             <p style={{color:'black'}}>{description}</p>
-            <img className="lego-image" src={imageUrl} alt={`LEGO set ${name}`} />
+            <img className="sport-image" src={imageUrl} alt={`SPORT ${name}`} />
         </div>
     );
 }
