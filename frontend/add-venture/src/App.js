@@ -27,15 +27,6 @@ function App() {
   );
 }
 
-function AddAdventureForm() {
-    const [adventure, setAdventure] = useState([]);
-    const addEntryClick = () => {
-        setAdventure(oldArray => [...oldArray, `Entry ${oldArray.length}`]);
-    };
-};
 
-function AddWardrobeForm() {
-    const [wardrobe, setWardrobe] = useState([]);
-};
 
 export default App;
