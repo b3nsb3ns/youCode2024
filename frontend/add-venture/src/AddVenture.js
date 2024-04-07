@@ -6,7 +6,7 @@ function AddVenture({ name, description, imageUrl }) {
     return (
         <div className="challenge-box-container">
             <h2 style={{color:'black'}}>{name}</h2>
-            <p style={{color:'black'}}>{description}</p>
+            <h3 style={{color:'black'}}>{description}</h3>
             <img className="sport-image" src={imageUrl} alt={`SPORT ${name}`} />
         </div>
     );

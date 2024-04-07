@@ -27,8 +27,83 @@
 
 .sport-image {
     width: 40%;
+    border-radius: 20px;
 }
 
 .black {
+    color: black;
+}
+
+.activity-img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    padding: 12px 24px;
+    opacity: 0.85;
+    filter: alpha(opacity=10); /* msie */
+}
+
+.wardrobe-img {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    padding: 12px 24px;
+}
+
+.container {
+    display : inline-flex;
+    position: relative;
+    width: 50%;
+}
+
+.wrapper-activity {
+    display: flex;
+}
+
+.wrapper-wardrobe {
+    display: flex;
+    background-color: #c7c9c8;
+    padding: 50px 50px;
+    border-radius: 20px;
+}
+
+.btn {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 10px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.wardrobe-add {
+    background-color: #555;
+    color: white;
+    font-size: 10px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.below {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: black;
 }
