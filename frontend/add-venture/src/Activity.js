@@ -24,29 +24,36 @@ export default function ActivityList() {
         ]);
     }
 
+    const clickToPage = (e, set, activity) => {
+        set([
+            ...activity,
+            { id: nextId++, name: e }
+        ]);
+    }
+
     return (
         <>
-            <h1>Activities:</h1>
+            <h1>Ad'Ventures:</h1>
             <div className="wrapper-activity">
                 <div className="container">
                     <img className="activity-img" src={runImg} alt="Running image"></img>
                     <div className="centered">Running</div>
-                    <button className="btn" onClick={()=>clickUpload(run_str, setRun, run)}>Add New</button>
+                    <button className="btn" onClick={()=>clickUpload(run_str, setRun, run)}>+ Add New</button>
                 </div>
                 <div className="container">
                     <img className="activity-img" src={skiImg} alt="Skiing image"></img>
                     <div className="centered">Skiing</div>
-                    <button className="btn" onClick={()=>clickUpload(ski_str, setSki, ski)}>Add New</button>
+                    <button className="btn" onClick={()=>clickUpload(ski_str, setSki, ski)}>+ Add New</button>
                 </div>
                 <div className="container">
                     <img className="activity-img" src={yogaImg} alt="Yoga image"></img>
                     <div className="centered">Yoga</div>
-                    <button className="btn" onClick={()=>clickUpload(yoga_str, setYoga, yoga)}>Add New</button>
+                    <button className="btn" onClick={()=>clickUpload(yoga_str, setYoga, yoga)}>+ Add New</button>
                 </div>
                 <div className="container">
                     <img className="activity-img" src={climbImg} alt="Climbing image"></img>
                     <div className="centered">Climbing</div>
-                    <button className="btn" onClick={()=>clickUpload(climb_str, setClimb, climb)}>Add New</button>
+                    <button className="btn" onClick={()=>clickUpload(climb_str, setClimb, climb)}>+ Add New</button>
                 </div>
             </div>
             <ul>

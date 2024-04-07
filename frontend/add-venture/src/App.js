@@ -14,6 +14,7 @@ function App() {
         <AddVenture
             name="Challenge of the week:"
             description="5-10km run, up to 1h length"
+            time="Time left: 3 days"
             imageUrl="https://pbs.twimg.com/media/BUIghUqCQAEqMsa.jpg:large"
         />
         <ActivityList/>

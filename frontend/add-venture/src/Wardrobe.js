@@ -55,7 +55,7 @@ export default function WardrobeList() {
                     <div className="below">Katin Hoody</div>
                 </div>
                 <button className='wardrobe-add' onClick={() => setPopUpMenu(!popUpMenu)}>
-                    Menu with Dropdown
+                    + Add Item
                 </button>
                 {popUpMenu && PopUpMenu()}
             </div>
